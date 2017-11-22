@@ -1,0 +1,593 @@
+Model {
+  Name			  "Interp"
+  Version		  4.00
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowStorageClass	  off
+  ExecutionOrder	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  on
+  BlockDescriptionStringDataTip	off
+  ToolBar		  off
+  StatusBar		  off
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Fri Sep  8 10:16:38 2000"
+  Creator		  "vise"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "vise"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Mon Aug 27 18:46:02 2001"
+  ModelVersionFormat	  "1.%<AutoIncrement:2>"
+  ConfigurationManager	  "none"
+  SimParamPage		  "Solver"
+  StartTime		  "0.0"
+  StopTime		  "60.0"
+  SolverMode		  "SingleTasking"
+  Solver		  "ode45"
+  RelTol		  "1e-3"
+  AbsTol		  "1e-6"
+  Refine		  "1"
+  MaxStep		  ".05"
+  MinStep		  "auto"
+  MaxNumMinSteps	  "-1"
+  InitialStep		  "auto"
+  FixedStep		  "auto"
+  MaxOrder		  5
+  OutputOption		  "RefineOutputTimes"
+  OutputTimes		  "[]"
+  LoadExternalInput	  off
+  ExternalInput		  "[t, u]"
+  SaveTime		  on
+  TimeSaveName		  "tout"
+  SaveState		  off
+  StateSaveName		  "xout"
+  SaveOutput		  on
+  OutputSaveName	  "yout"
+  LoadInitialState	  off
+  InitialState		  "xInitial"
+  SaveFinalState	  off
+  FinalStateName	  "xFinal"
+  SaveFormat		  "Array"
+  LimitDataPoints	  off
+  MaxDataPoints		  "1000"
+  Decimation		  "1"
+  AlgebraicLoopMsg	  "warning"
+  MinStepSizeMsg	  "warning"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  SingleTaskRateTransMsg  "none"
+  MultiTaskRateTransMsg	  "error"
+  IntegerOverflowMsg	  "warning"
+  CheckForMatrixSingularity "none"
+  UnnecessaryDatatypeConvMsg "none"
+  Int32ToFloatConvMsg	  "warning"
+  InvalidFcnCallConnMsg	  "error"
+  SignalLabelMismatchMsg  "none"
+  LinearizationMsg	  "none"
+  VectorMatrixConversionMsg "none"
+  SfunCompatibilityCheckMsg "none"
+  BlockPriorityViolationMsg "warning"
+  ArrayBoundsChecking	  "none"
+  ConsistencyChecking	  "none"
+  ZeroCross		  on
+  Profile		  off
+  SimulationMode	  "normal"
+  RTWSystemTargetFile	  "grt.tlc"
+  RTWInlineParameters	  off
+  RTWRetainRTWFile	  off
+  RTWTemplateMakefile	  "grt_unix.tmf"
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "oneshot"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  off
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock off
+  OptimizeBlockIOStorage  on
+  BufferReuse		  on
+  ParameterPooling	  on
+  BlockReductionOpt	  on
+  RTWExpressionDepthLimit 5
+  BooleanDataType	  off
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "Interp"
+    Location		    [38, 504, 684, 718]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      SubSystem
+      Name		      "Discrete-time\nLP Filter"
+      Ports		      [1, 1]
+      Position		      [280, 102, 355, 148]
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskType		      "butter"
+      MaskDescription	      "Butterworth low pass filter.\n(Requires Signal "
+"Processing Toolbox)"
+      MaskHelp		      "IIR Butterworth low pass filter using MATLAB's "
+"butter command."
+      MaskPromptString	      "Cutoff frequency (0 to pi):|Order:|Sample time:"
+      MaskStyleString	      "edit,edit,edit"
+      MaskTunableValueString  "on,on,on"
+      MaskCallbackString      "||"
+      MaskEnableString	      "on,on,on"
+      MaskVisibilityString    "on,on,on"
+      MaskToolTipString	      "on,on,on"
+      MaskInitialization      "[a,b,c,d]=butter(@2,@1/pi); ts=@3; [num,den]=ss"
+"2tf(a,b,c,d,1); if (@2 <= 8), [a,b,c,d]=tf2ss(num,den); end; h=freqz(num,den,"
+"64); "
+      MaskDisplay	      "plot(1:64,abs(h))"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "3.14159|10|1"
+      MaskVariableAliases     ",,"
+      System {
+	Name			"Discrete-time\nLP Filter"
+	Location		[70, 200, 570, 460]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "In1"
+	  Position		  [20, 80, 40, 100]
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  DiscreteStateSpace
+	  Name			  "Discrete-time\nLP Filter"
+	  Position		  [90, 62, 165, 108]
+	  A			  "a"
+	  B			  "b"
+	  C			  "c"
+	  D			  "d"
+	  X0			  "0"
+	  SampleTime		  "ts"
+	  Realization		  "auto"
+	  RTWStateStorageClass	  "Auto"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out1"
+	  Position		  [195, 80, 215, 100]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "In1"
+	  SrcPort		  1
+	  DstBlock		  "Discrete-time\nLP Filter"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Discrete-time\nLP Filter"
+	  SrcPort		  1
+	  DstBlock		  "Out1"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Gain"
+      Position		      [390, 112, 415, 138]
+      Gain		      "1"
+      Multiplication	      "Element-wise(K.*u)"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux"
+      Ports		      [3, 1]
+      Position		      [485, 22, 515, 58]
+      Inputs		      "3"
+      DisplayOption	      "none"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Scope"
+      Ports		      [1]
+      Position		      [565, 25, 595, 55]
+      FontSize		      12
+      Floating		      off
+      Location		      [573, 479, 1019, 718]
+      Open		      on
+      NumInputPorts	      "1"
+      TickLabels	      "on"
+      ZoomMode		      "on"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+      }
+      Grid		      "on"
+      TimeRange		      "30"
+      YMin		      "-1.5"
+      YMax		      "1.5"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      DataFormat	      "Array"
+      LimitDataPoints	      on
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      SignalGenerator
+      Name		      "Signal\nGenerator"
+      Position		      [30, 108, 75, 142]
+      WaveForm		      "sine"
+      Amplitude		      "1.000000"
+      Frequency		      "0.1"
+      Units		      "Hertz"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Spectrum\nAnalyzer"
+      Ports		      [1]
+      Position		      [565, 105, 595, 145]
+      ShowPortLabels	      off
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskType		      "Spectrum analyzer."
+      MaskHelp		      "EE438 Lab utility; See Prof. Bouman."
+      MaskPromptString	      "Number of sample points:|Sampling period (sec):"
+"|Plotting Period (sec):"
+      MaskStyleString	      "edit,edit,edit"
+      MaskTunableValueString  "on,on,on"
+      MaskCallbackString      "||"
+      MaskEnableString	      "on,on,on"
+      MaskVisibilityString    "on,on,on"
+      MaskToolTipString	      "on,on,on"
+      MaskInitialization      "N=@1; T_s=@2;plot_period=@3;"
+      MaskDisplay	      "plot(0,0,100,100,[14,91,91,14,14],[86,86,40,40,"
+"86],[85,82,80,79,75,67,63,60,57,53,41,36,33,27,24],[49,50,53,50,49,51,54,66,5"
+"4,50,50,52,81,51,49])"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "1024|.05|10"
+      MaskVariableAliases     ",,"
+      System {
+	Name			"Spectrum\nAnalyzer"
+	Location		[838, 205, 1114, 345]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "input signal"
+	  Position		  [50, 55, 70, 75]
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  "S-Function"
+	  Name			  "S-function block \nwhich spec_anal.m"
+	  Ports			  [1]
+	  Position		  [160, 46, 210, 84]
+	  FunctionName		  "SpecAnal"
+	  Parameters		  "N,T_s,plot_period"
+	  PortCounts		  "[]"
+	  SFunctionModules	  "''"
+	}
+	Line {
+	  SrcBlock		  "input signal"
+	  SrcPort		  1
+	  DstBlock		  "S-function block \nwhich spec_anal.m"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Upsampler"
+      Ports		      [1, 1]
+      Position		      [195, 104, 235, 146]
+      ShowPortLabels	      off
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskType		      "D-T interpolator"
+      MaskPromptString	      "Input sampling period:|Upsampling factor:"
+      MaskStyleString	      "edit,edit"
+      MaskTunableValueString  "on,on"
+      MaskCallbackString      "|"
+      MaskEnableString	      "on,on"
+      MaskVisibilityString    "on,on"
+      MaskToolTipString	      "on,on"
+      MaskInitialization      "T=@1;L=@2;"
+      MaskDisplay	      "disp('L')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "1|1"
+      MaskVariableAliases     ","
+      System {
+	Name			"Upsampler"
+	Location		[163, 367, 536, 585]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "in_1"
+	  Position		  [30, 45, 50, 65]
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  DigitalClock
+	  Name			  "Digital Clock"
+	  Position		  [35, 95, 70, 125]
+	  SampleTime		  "T/L"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "Fcn"
+	  Position		  [100, 100, 140, 120]
+	  Expr			  "rem(u[1],T)<T/L"
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product"
+	  Ports			  [2, 1]
+	  Position		  [190, 48, 220, 72]
+	  Inputs		  "2"
+	  Multiplication	  "Element-wise(.*)"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  UnitDelay
+	  Name			  "Unit Delay"
+	  Position		  [80, 45, 130, 65]
+	  X0			  "0"
+	  SampleTime		  "T/L"
+	  RTWStateStorageClass	  "Auto"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "out_1"
+	  Position		  [335, 50, 355, 70]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "0"
+	}
+	Line {
+	  SrcBlock		  "Product"
+	  SrcPort		  1
+	  DstBlock		  "out_1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Fcn"
+	  SrcPort		  1
+	  Points		  [10, 0; 0, -45]
+	  DstBlock		  "Product"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Unit Delay"
+	  SrcPort		  1
+	  DstBlock		  "Product"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "in_1"
+	  SrcPort		  1
+	  DstBlock		  "Unit Delay"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Digital Clock"
+	  SrcPort		  1
+	  DstBlock		  "Fcn"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      ZeroOrderHold
+      Name		      "Zero-Order\nHold"
+      Position		      [110, 110, 140, 140]
+      SampleTime	      "1"
+    }
+    Block {
+      BlockType		      ZeroOrderHold
+      Name		      "Zero-Order\nHold1"
+      Position		      [500, 110, 530, 140]
+      SampleTime	      ".05"
+    }
+    Line {
+      SrcBlock		      "Zero-Order\nHold1"
+      SrcPort		      1
+      DstBlock		      "Spectrum\nAnalyzer"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Mux"
+      SrcPort		      1
+      DstBlock		      "Scope"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Gain"
+      SrcPort		      1
+      Points		      [40, 0]
+      Branch {
+	DstBlock		"Zero-Order\nHold1"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -75]
+	DstBlock		"Mux"
+	DstPort			3
+      }
+    }
+    Line {
+      SrcBlock		      "Discrete-time\nLP Filter"
+      SrcPort		      1
+      DstBlock		      "Gain"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Zero-Order\nHold"
+      SrcPort		      1
+      Points		      [15, 0]
+      Branch {
+	Points			[0, -95]
+	DstBlock		"Mux"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"Upsampler"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Upsampler"
+      SrcPort		      1
+      Points		      [10, 0]
+      Branch {
+	DstBlock		"Discrete-time\nLP Filter"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -85]
+	DstBlock		"Mux"
+	DstPort			2
+      }
+    }
+    Line {
+      SrcBlock		      "Signal\nGenerator"
+      SrcPort		      1
+      DstBlock		      "Zero-Order\nHold"
+      DstPort		      1
+    }
+    Annotation {
+      Position		      [437, 107]
+      VerticalAlignment	      "top"
+      Text		      "signal c"
+    }
+    Annotation {
+      Position		      [277, 47]
+      VerticalAlignment	      "top"
+      Text		      "signal b"
+    }
+    Annotation {
+      Position		      [187, 37]
+      VerticalAlignment	      "top"
+      Text		      "signal a"
+    }
+  }
+}
