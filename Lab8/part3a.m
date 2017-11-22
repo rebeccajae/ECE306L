@@ -1,6 +1,6 @@
 %%%
 % ECE306L Lab Files
-% Author: Rebecca J. Pruim
+% Author: Not totally sure. Excerpted from Lab Manual
 %%%
 f=imread('Fig-1.jpg');
 figure, imshow(f);
